@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Guru</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <div id="startScreen">
+    <h1>Selamat Hari Guru</h1>
+    <button id="startButton">Mulai 🎉</button>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="audio/background-music.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+</audio>
+
+  <div id="mainContent" style="display: none;">
+    <header class="hero">
+      <h1>Selamat Hari Guru</h1>
+      <h2>Ibu Suci Ismayanti</h2>
+      <p>Untuk segala dedikasi, perjuangan, dan kasih yang tak terhingga.</p>
+    </header>
+
+    <main>
+      <!-- Cerita Hari Guru -->
+      <section class="story">
+        <h2 class="animate-slide-up">Terima Kasih Guruku</h2>
+      <p>Kau lah cahaya yang membimbing kami di tengah kegelapan, yang selalu hadir dengan senyum dan kata-kata yang penuh harapan. Setiap pengorbananmu memberi kami jalan untuk masa depan yang lebih cerah. Terima kasih telah memberi kami banyak lebih dari sekadar ilmu, tetapi juga kehidupan.
+      Di setiap langkah kami, ada jejakmu yang tak pernah terlupakan, yang selalu mengingatkan kami untuk terus berusaha dan berbuat baik,bagaimanapun cara kami membalas nya,jasamu takan pernah bisa terbalaskan.</p>
+
+      </section>
+      <section class="photo-collage">
+      <h2 class="animate-slide-up">Kenangan Bersama Guru</h2>
+      </section>
+
+      <section class="photo-collage">
+        
+        <div class="photo-collage">
+          <div
+            class="photo"
+            style="background-image: url('images/foto1.jpg');"
+            onclick="openModal('images/foto1.jpg')"
+          ></div>
+          <div
+            class="photo"
+            style="background-image: url('images/foto2.jpg');"
+            onclick="openModal('images/foto2.jpg')"
+          ></div>
+          <div
+            class="photo"
+            style="background-image: url('images/foto3.jpg');"
+            onclick="openModal('images/foto3.jpg')"
+          ></div>
+          <div
+            class="photo"
+            style="background-image: url('images/foto1.jpg');"
+            onclick="openModal('images/foto1.jpg')"
+          ></div>
+          <div
+            class="photo"
+            style="background-image: url('images/foto2.jpg');"
+            onclick="openModal('images/foto2.jpg')"
+          ></div>
+          <div
+            class="photo"
+            style="background-image: url('images/foto3.jpg');"
+            onclick="openModal('images/foto3.jpg')"
+          ></div>
+        </div>
+        
+        <!-- Modal untuk menampilkan gambar -->
+        <div id="imageModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" class="modal-content" />
+        </div>
+      </section>
+
+      <center>
+        <p class="collage-caption">Foto-foto kenangan bersama Ibu Suci tercinta yang selalu kami kenang.</p>
+      </center>
+
+      <section class="quote">
+        <h2>Kata-kata</h2>
+        <p id="quote">"Guru adalah pelita yang menerangi jalan kami."</p>
+        <button onclick="generateQuote()">Kata-kata</button>
+      </section>
+
+      <section class="tribute">
+        <h2>Ucapan Terima Kasih dari Kami</h2>
+        <p>Untuk Ibu Suci yang telah menginspirasi kami dengan berbagai peran, berikut adalah pesan dan ucapan terima kasih yang kami sampaikan dengan penuh rasa hormat.</p>
+        <div class="tribute-container">
+          <div class="tribute-card">
+            <h3>Sebagai Guru Indonesia</h3>
+            <p>"Kau mengajarkan kami untuk mencintai bahasa, menulis dengan hati, dan berbicara dengan keberanian,dengan cara terbaikmu,yang lembut dan penuh kesabaran,yang tidak pasti semua guru bisa lakukan."</p>
+          </div>
+          <div class="tribute-card">
+            <h3>Sebagai Walikelas</h3>
+            <p>"Tanpamu, kami tidak akan tahu betapa berharganya memanfaatkan waktu. Denganmu,kami mulai berani melakukan hal yang sebelumnya belum pernah kami lakukan. Karnamu kami mulai berusaha mengikuti acara-acara dan untukmu,kami akan melakukan yang terbaik agar tak mempermalukanmu dan agar membanggakanmu"</p>
+          </div>
+          <div class="tribute-card">
+            <h3>Sebagai Ibu Kami</h3>
+            <p>"Terima kasih telah menjadi sosok yang selalu sabar, mengayomi, dan membimbing kami,mendukung kami,mengajari kami hal hal yang tidak kami ketahui,mendampingi kami dan selalu ada untuk kami.Seringkali kami membuat kekacauan dan mungkin seringkali kami membuatmu hilang kesabaran,tapi kau tak pernah lelah mendampingi kami,tanpamu entah bagaimana jadinya kami."</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="kwotes">
+        <h2>Guru Menurut Para Tokoh</h2>
+      </section>
+        <div class="kwotes p">
+        <p>"Guru adalah pahlawan tanpa tanda jasa - Ki Hajar Dewantara"</p>
+                <p>"Jika Anda harus menempatkan seseorang di atas tumpuan, taruhlah guru. Mereka adalah pahlawan masyarakat - Guy Kawasaki."</p>
+                <p>"Guru adalah kompas yang mengaktifkan magnet keingintahuan, pengetahuan, dan kebijaksanaan pada siswa - Ever Garrison.</p><br>
+                <p>Orangtua kami memberikan kami hidup, <br> dan engkau mengajari kami cara menjalaninya.<br> Jasamu akan selalu kekal abadi.<br> Selamat Hari Guru - Murid mu tercinta Sakti Arif</p>
+        </div>
+
+      </section>
+    </main>
+
+      <div id="confetti"></div>
+    </main>
+<br><br>
+    <center>
+<h2>Terimakasih sebesar besarnya kepada</h2>
+
+    <img src="images/busuci.png" alt="Contoh Gambar" class="responsive-image" />
+
+<h2 class="knjd">Ibu Suci Ismayanti</h2>
+    </center>
+    
+
+    <footer>
+      <p>© 2024 - Terimakasih telah mendidik kami! -Sakti </p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
